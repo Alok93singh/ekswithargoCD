@@ -10,24 +10,8 @@ https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html
 ## kubectl
 
 ## argocd-cli
-##############################################################################################################################
-##################### Create AWS EKS clsuster ################################################################################
-## Create EKS cluster
-eksctl create cluster --name eksargocd --node-type t2.large --nodes 1 --nodes-min 1 --nodes-max 2 --region us-east-1 --zones=us-east-1a,us-east-1b,us-east-1c
 
-## Get EKS Cluster service
-eksctl get cluster --name eksargocd --region us-east-1
-
-## Update Kubeconfig 
-aws eks update-kubeconfig --name eksargocd
-
-## Get EKS Pod data.
-kubectl get pods --all-namespaces
-
-## Delete EKS cluster
-eksctl delete cluster --name eksargocd --region us-east-1
-
-##################################################CREATE AWS EKS CD with ArgoCD #######################################################
+##################################################CREATE AWS EKS with ArgoCD #######################################################
 ## Installing Argo CD on Your Cluster
 1.Check if kubectl is working as expected
   kubectl get nodes
