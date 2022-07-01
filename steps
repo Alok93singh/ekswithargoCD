@@ -42,7 +42,8 @@ eksctl delete cluster --name eksargocd --region us-east-1
   kubectl get pods -n argocd
 
 ## Forwarding Ports to Access Argo CD
-5.1.Retrieve the admin password which was automatically generated during your installation and decode from base64 from online.
+5.1.Retrieve the admin password which was automatically generated during your installation and decode from base64 from online
+example site: https://www.base64decode.org/ .
   kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}"
 
 5.2 forward those to arbitrarily chosen other ports, like 8080, like so:
