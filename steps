@@ -73,6 +73,8 @@ example site: https://www.base64decode.org/ .
 
 7.3 Port foward from onther session check the application status
   kubectl port-forward svc/helm-guestbook 9090:80
+  
+ 7.4 To access application curl on localhost at port 9090.
   http://localhost:9090
 
 #############################################################################################################################################
