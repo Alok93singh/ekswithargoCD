@@ -1,18 +1,12 @@
 ########################################################################## Pre-requisite ##########################################################################################
 ## AWS CLI
-
-## Chocolatey links (installer - for argocd cli deployment)
-https://chocolatey.org/install
-
-## Pre-requisite links
-https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html
-
 ## kubectl
 
 
-For installation of can refer https://github.com/Alok93singh/aws-eks-kubernetes-notes/tree/master/01-EKS-Create-Cluster-using-eksctl/01-01-Install-CLIs 
+For installation of kubectl and AWS CLI can refer https://github.com/Alok93singh/aws-eks-kubernetes-notes/tree/master/01-EKS-Create-Cluster-using-eksctl/01-01-Install-CLIs 
 
-## argocd-cli
+## argocd-cli installaction command.
+
 curl -sSL -o /usr/local/bin/argocd https://github.com/argoproj/argo-cd/releases/latest/download/argocd-linux-amd64
 chmod +x /usr/local/bin/argocd
 argocd version
