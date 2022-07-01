@@ -76,5 +76,9 @@ example site: https://www.base64decode.org/ .
   
  7.4 To access application curl on localhost at port 9090.
   http://localhost:9090
+  
+  ##Notes:
+  list all running argocd application.
+     argocd app list
 
 #############################################################################################################################################
